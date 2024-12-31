@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Styles from "./style/header.module.css";
 
-const Header = ({ isMenuOpen, toggleMenu }) => {
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header className={Styles.header}>
             <nav className={Styles.nav_container}>

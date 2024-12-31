@@ -49,15 +49,16 @@ img {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .home_container {
-        flex-direction: column;
+        flex-direction: row-reverse;
         gap: 2rem;
     }
-    .social-container{
-        display: block;
-        padding-left: 20px;
+    .home_section{
+        display: flex;
+        flex-direction: column;
     }
-    .home__social_icon{
-        padding: 1rem 2rem;
+    .social-container{
+        display: flex;
+        padding-left: 20px;
     }
 
     .home_pic{
