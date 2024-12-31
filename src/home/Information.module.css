@@ -47,7 +47,15 @@
     margin-left: 10px;
 }
 
+.home_info{
+    display: none;
+}
 @media (max-width: 768px) {
+
+    .home_info{
+        display: block;
+    }
+
     .title {
         font-size: 200px;
     }
