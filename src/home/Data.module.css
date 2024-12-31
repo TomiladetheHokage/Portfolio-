@@ -2,9 +2,27 @@
     font-size:50px;
     margin-bottom: 20px;
 }
-.sub_title{
+.sub_title {
     margin-bottom: 20px;
+    padding-left: 5.4rem;
+    position: relative;
 }
+
+.sub_title::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    top: 1rem;
+    margin-bottom: 20rem;
+}
+
+.hide {
+    display: none;
+}
+
 .description{
     margin-bottom: 20px;
 }
@@ -27,4 +45,25 @@
 
 .button i {
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 200px;
+    }
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+    .sub_title {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 15px;
+    }
 }

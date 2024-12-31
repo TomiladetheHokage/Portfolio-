@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --hue: 0;
@@ -15,12 +16,24 @@
 html {
     scroll-behavior: smooth;
 }
+.fa-thin{
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+}
+.fa-regular{
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+}
 .fa-solid{
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
 }
 .fa-brands {
     font-family: "Font Awesome 5 Brands";
+}
+.fa {
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 100;
 }
 
 body,

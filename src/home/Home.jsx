@@ -1,19 +1,19 @@
 import React from 'react';
 import Styles from "./Home.module.css";
-import Social from "./Social.jsx";
 import Data from "./Data.jsx";
-import shot from '../assets/hotPic.jpg'
+import shot from '../assets/hotPic.jpg'; // Make sure to replace with the correct path to your image
 
-const Home = () => {
-    return(
+const Home = ({ isMenuOpen }) => {
+    return (
         <section className={Styles['home_section']} id="home">
             <div className={Styles['home_container']}>
-                <Social/>
-                <Data/>
-                <img src={shot} alt="Profile"/>
+                <div className={Styles['home_img']}>
+                    <img src={shot} alt="Profile" />
+                </div>
+                <Data isMenuOpen={isMenuOpen} />
             </div>
         </section>
-    )
+    );
 }
 
 export default Home;
