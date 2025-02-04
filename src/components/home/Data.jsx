@@ -16,7 +16,7 @@ const Data = () => {
                     Software Engineer
                 </h3>
                 <p className={Styles["description"]}>
-                    i am a software Engineer in Lagos, Nigeria<br/> focused on engineering solutions.
+                    I'm passionate about engineering solutions<br/> and designing systems.
                 </p>
 
                 <a href={"#contact"} className={Styles["button"]}>

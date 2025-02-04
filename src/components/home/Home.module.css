@@ -1,6 +1,6 @@
 .home_section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 80vh;
 }
@@ -46,7 +46,6 @@ img {
     }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .home_container {
         flex-direction: row-reverse;
@@ -81,17 +80,14 @@ img {
         height: auto;
         padding: 10px;
     }
-
     .home_container {
         gap: 1rem;
     }
-
     .social-container {
-        order: 3; /* Move social icons below the image */
+        order: 3;
         flex-direction: column;
         align-items: center;
     }
-
     img {
         max-width: 250px;
     }

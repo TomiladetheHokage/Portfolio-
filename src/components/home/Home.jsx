@@ -2,8 +2,9 @@ import React from 'react';
 import Styles from "./Home.module.css";
 import Social from "./Social.jsx";
 import Data from "./Data.jsx";
-import shot from '../assets/hotPic.jpg'
+import shot from '../../assets/hotPic.jpg'
 import Information from "./Information.jsx";
+import ScrollDown from "./ScrollDown.jsx";
 
 const Home = () => {
     return(
@@ -16,7 +17,9 @@ const Home = () => {
                 </div>
             </div>
 
+            <ScrollDown/>
             <Information/>
+
         </section>
     )
 }

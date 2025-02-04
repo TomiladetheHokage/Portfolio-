@@ -6,7 +6,7 @@ const Social = () => {
     return (
         <div className={Styles["social-container"]}>
             <a href="#" className={Styles["home__social_icon"]} target="_blank"
-                rel="noopener noreferrer"
+               rel="noopener noreferrer"
             >
                 <i className="fa-brands fa-instagram"></i>
             </a>

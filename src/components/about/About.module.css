@@ -1,0 +1,300 @@
+/*.about_section {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 60vh;*/
+/*    !*text-align: center;*!*/
+/*    margin-top: 5rem;*/
+/*    background-color: #f9f9f9;*/
+/*    padding: 2rem;*/
+/*}*/
+
+
+/*.title {*/
+/*    font-size: 2em;*/
+/*    margin-bottom: 1rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*.sub-title {*/
+/*    font-size: 1.2em;*/
+/*    color: #777;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/*.about {*/
+/*    margin-top: 3rem;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 7rem;*/
+/*}*/
+
+/*.fynshit {*/
+/*    animation: none;*/
+/*    width: 300px;*/
+/*    height: auto;*/
+/*    border-radius: 15px;*/
+/*    object-fit: cover;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+
+
+
+/*.about_description {*/
+/*    font-size: 1em;*/
+/*    line-height: 1.6;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/*.btn {*/
+/*    display: inline-block;*/
+/*    padding: 0.75rem 1.5rem;*/
+/*    font-size: 1em;*/
+/*    color: #fff;*/
+/*    background-color: #007bff;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    text-decoration: none;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background-color: #0056b3; !* Darker blue on hover *!*/
+/*}*/
+
+/*.info_container{*/
+/*    display: flex;*/
+/*    gap: 10rem;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+/*.info{*/
+/*    !*background-color: #e8e8e8;*!*/
+/*    border: 1px solid #d1d0d0;*/
+/*    border-radius: 20px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+
+/*}*/
+/*HELOOOOOOOOOOOOOOOOOOOOOOO!!*/
+/*.about_section {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: auto;*/
+/*    text-align: center;*/
+/*    margin-top: 3rem;*/
+/*    background-color: #f9f9f9;*/
+/*    padding: 2rem;*/
+/*}*/
+
+/*.about {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: 2rem;*/
+/*    margin-top: 2rem;*/
+/*}*/
+
+/*!* Profile Image *!*/
+/*.fynshit {*/
+/*    width: 100%;*/
+/*    max-width: 250px;*/
+/*    height: auto;*/
+/*    border-radius: 50%;*/
+/*    object-fit: cover;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*!* Info Cards *!*/
+/*.info_container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*.info {*/
+/*    width: 150px;*/
+/*    text-align: center;*/
+/*    padding: 1rem;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*!* About Description *!*/
+/*.about_description {*/
+/*    font-size: 1rem;*/
+/*    line-height: 1.6;*/
+/*    margin-bottom: 1rem;*/
+/*    text-align: center;*/
+/*}*/
+
+/*!* Download Button *!*/
+/*.btn {*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    padding: 0.75rem 1.5rem;*/
+/*    font-size: 1rem;*/
+/*    color: #fff;*/
+/*    background-color: #007bff;*/
+/*    border-radius: 5px;*/
+/*    text-decoration: none;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*!* Responsive Design *!*/
+/*@media (max-width: 768px) {*/
+/*    .about {*/
+/*        flex-direction: column;*/
+/*        gap: 1.5rem;*/
+/*    }*/
+
+/*    .info_container {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        gap: 1rem;*/
+/*    }*/
+
+/*    .info {*/
+/*        width: 100%;*/
+/*        max-width: 250px;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+/* Container for image and text */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Profile Image */
+.fynshit {
+    animation: none;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text and info container */
+.about_data {
+    flex: 1;
+}
+
+/* Info Cards */
+.info_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.info {
+    width: 200px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Description */
+.about_description {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Download Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_description {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .info_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 250px;
+    }
+    .sub-title{
+        margin-bottom: 10px;
+    }
+}
