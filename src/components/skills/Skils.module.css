@@ -1,0 +1,24 @@
+.skill_section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skill_container{
+    display: flex;
+    flex-direction: row;
+    /*grid-template-columns: repeat(2, 350px);*/
+    column-gap: 5rem;
+    justify-content: center;
+}
+
+.skills_content{
+    border: 1px solid black;
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    margin-top: 2rem;
+}
+.section_subtitle{
+    margin-bottom: 2rem;
+}
+.section_title{
+    margin-top: 7rem;
+}
