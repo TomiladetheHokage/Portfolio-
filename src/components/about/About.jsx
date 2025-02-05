@@ -20,8 +20,8 @@ const About = () => {
                         <Info/>
 
                         <p className={Styles['about_description']}>
-                            Software Engineer | B.Sc. in Computer Science, Caleb University<br/>
-                            Passionate about Engineering Scalable Solutions, Designing, Developing,<br/>
+                            Software Engineer | B.Sc. in Computer Science, Caleb University
+                            Passionate about Engineering Scalable Solutions, Designing, Developing,
                             and Maintaining Robust Software Systems
                         </p>
 

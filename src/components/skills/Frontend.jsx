@@ -5,10 +5,11 @@ import Styles from "./Skils.module.css";
 const Frontend = () => {
     return (
         <div className={Styles['skills_content']}>
-            <h3 className={Styles['skills_title']}>Frontend Skills</h3>
+            <h3 className={Styles['skills_title']}>Frontend Developer</h3>
 
             <div className={Styles['skills_box']}>
                 <div className={Styles['skills_group']}>
+
                     <div className={Styles['skills_data']}>
                         <FaCheckCircle className={Styles['badge_icon']} /> {/* Add the badge icon */}
                         <div>

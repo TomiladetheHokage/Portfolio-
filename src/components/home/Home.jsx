@@ -3,6 +3,8 @@ import Styles from "./Home.module.css";
 import Social from "./Social.jsx";
 import Data from "./Data.jsx";
 import shot from '../../assets/hotPic.jpg'
+import shot2 from '../../assets/fynshit.jpg'
+
 import Information from "./Information.jsx";
 import ScrollDown from "./ScrollDown.jsx";
 
@@ -13,7 +15,7 @@ const Home = () => {
                 <Social/>
                 <Data/>
                 <div className={Styles['home_pic']}>
-                    <img src={shot} alt="Profile"/>
+                    <img src={shot2} alt="Profile"/>
                 </div>
             </div>
 
