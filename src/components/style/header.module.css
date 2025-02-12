@@ -139,25 +139,26 @@ body {
         justify-content: flex-start;
         box-shadow: none;
     }
+
     .show {
         display: flex;
     }
+
     .nav_logo.show {
         position: absolute;
         top: 1rem;
         left: 1rem;
     }
+
+    .header {
+        position: static;
+        top: 0;
+        margin-top: -5rem;
+    }
 }
 
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--body-color);
-    padding: 1rem 0;
-    width: 100%;
-}
+
 
 
 
