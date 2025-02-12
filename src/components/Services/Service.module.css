@@ -1,0 +1,121 @@
+.servicesSection {
+    text-align: center;
+    padding: 40px;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.servicesGrid {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.serviceCard {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /*border: solid 1px #aeaeae;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    transform-origin: center;
+    margin-left: 10rem;
+}
+
+.serviceCard:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.serviceTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.viewMore {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.backButton, .nextButton {
+    padding: 5px 10px;
+    background-color: #d1d1d1;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.backButton:hover, .nextButton:hover {
+    background-color: #666;
+}
+
+/* Responsive Design for phones */
+@media (max-width: 768px) {
+    .servicesSection {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .subheading {
+        font-size: 1rem;
+    }
+
+    .serviceTitle{
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+
+    .serviceCard {
+        width: 180px;
+        height: 240px;
+        margin-left: 90px;
+    }
+
+    .viewMore {
+        font-size: 0.9rem;
+
+    }
+
+    .navigationButtons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .backButton, .nextButton {
+        margin-bottom: 10px;
+    }
+}

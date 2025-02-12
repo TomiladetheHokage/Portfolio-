@@ -6,7 +6,7 @@ const Backend = () => {
     return(
         <>
             <div className={Styles['skills_content']}>
-                <h3 className={Styles['skills_title']}>Backend Developer</h3>
+                <h3 className={Styles['skills_title']}>Backend Development</h3>
 
                 <div className={Styles['skills_box']}>
                     <div className={Styles['skills_group']}>

@@ -86,6 +86,10 @@
         padding: 1.5rem 2rem;
     }
 
+    .skill_section{
+        margin-top: -3rem;
+    }
+
     .skills_group {
         grid-template-columns: 1fr; /* Stack skills vertically */
         text-align: center;

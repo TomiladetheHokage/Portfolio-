@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <ScrollDown/>
+            {/*<ScrollDown/>*/}
             <Information/>
 
         </section>

@@ -4,18 +4,16 @@ import Backend from "./Backend.jsx";
 
 const Skills = () => {
 
-    return(
-        <>
-            <section className={Styles['skill_section']}>
-                <h2 className={Styles['section_title']}>Skills</h2>
-                <span className={Styles['section_subtitle']}>My technical level</span>
+    return (
+        <section className={Styles['skill_section']}>
+            <h2 className={Styles['section_title']}>Skills</h2>
+            <span className={Styles['section_subtitle']}>My technical level</span>
 
-                <div className={Styles['skill_container']}>
-                    <Frontend/>
-                    <Backend/>
-                </div>
-            </section>
-        </>
+            <div className={Styles['skill_container']}>
+                <Frontend/>
+                <Backend/>
+            </div>
+        </section>
     )
 }
 
