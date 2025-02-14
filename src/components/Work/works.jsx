@@ -33,8 +33,8 @@ const Works = () => {
                             className={styles["work__item"]}
                             key={index}
                         >
-                    {item.name}
-                </span>
+                              {item.name}
+                        </span>
                     )
                 })}
             </div>

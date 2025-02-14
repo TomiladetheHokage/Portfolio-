@@ -41,7 +41,7 @@ const services = [
             "Testing and Debugging.",
             "Updating and Maintaining Apps.",
         ],
-        icon: <i className="fa-solid fa-code"></i>,
+        icon: <i className="fa-solid fa-mobile"></i>,
     },
     {
         title: "Database Management",
@@ -52,7 +52,7 @@ const services = [
             "Writing efficient SQL queries.",
             "Data integrity and security.",
         ],
-        icon: <i className="fa-solid fa-code"></i>,
+        icon: <i className="fa-solid fa-database"></i>,
     },
     {
         title: "Consulting Services",

@@ -25,7 +25,7 @@
 .work_section {
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -78,12 +78,30 @@
     transform: translateX(0.25rem);
 }
 
+.work_description {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    width: 350px;
+    text-align: left;
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .work__container {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .work_description{
+        width: 100%;
+        text-align: left;
+    }
+
 
     .work_card_image, .special_image {
         width: 100%;
@@ -92,15 +110,12 @@
 
     .work_card, .special_card {
         padding: 1rem;
-        margin-bottom: 1rem;
         width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-
+        margin: auto;
     }
 
     .work_filters {
-        flex-direction: column;
+        flex-direction: row;
         row-gap: 0.5rem;
     }
 }
