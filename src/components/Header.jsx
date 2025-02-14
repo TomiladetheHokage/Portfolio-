@@ -5,7 +5,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
     return (
         <header className={Styles.header}>
             <nav className={Styles.nav_container}>
-                <a href="index.html" className={Styles.nav_logo}>Tomilade</a>
+                <a href="index.html" className={Styles.nav_logo}>Tomilade.com</a>
 
                 <div className={`${Styles.nav__menu} ${isMenuOpen ? Styles.show : ""}`}>
                     <ul className={Styles.nav__list}>

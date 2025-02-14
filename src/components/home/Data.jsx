@@ -9,7 +9,7 @@ const Data = () => {
             <div className={Styles['home_data']}>
                 <h1 className={Styles["title"]}>
                     Tomilade Oyebola
-                    {/*<i className="fa-solid fa-hand-spock"></i>*/}
+                    <i className="fa-sharp fa-thin fa-hand-wave"></i>
                 </h1>
 
                 <h3 className={Styles['sub_title']}>

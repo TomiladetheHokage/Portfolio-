@@ -5,7 +5,7 @@ import Backend from "./Backend.jsx";
 const Skills = () => {
 
     return (
-        <section className={Styles['skill_section']}>
+        <section className={Styles['skill_section']} id="skills">
             <h2 className={Styles['section_title']}>Skills</h2>
             <span className={Styles['section_subtitle']}>My technical level</span>
 

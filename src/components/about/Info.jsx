@@ -4,13 +4,13 @@ const Info = () => {
         <>
             <div className={Style['info_container']}>
                 <div className={Style['info']}>
-                    <div className="icon">💡</div>
+                    <i className="fa-regular fa-lightbulb"></i>
                     <h2>Experience</h2>
                     <p>2 + years</p>
                 </div>
 
                 <div className={Style['info']}>
-                    <div className="icon">💼</div>
+                    <i className="fa-solid fa-briefcase"></i>
                     <h2>Completed</h2>
                     <p>5 projects</p>
                 </div>

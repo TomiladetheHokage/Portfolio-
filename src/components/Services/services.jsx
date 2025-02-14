@@ -64,7 +64,7 @@ const services = [
             "Training and support for staff.",
             "Strategic planning for future technology needs",
         ],
-        icon: <i className="fa-solid fa-code"></i>,
+        icon: <i className="fa-solid fa-phone"></i>,
     },
     // {
     //     title: "Custom Software Solutions",
@@ -118,7 +118,7 @@ const Services = () => {
     };
 
     return (
-        <div className={styles.servicesSection}>
+        <div className={styles.servicesSection} id='services'>
             <h2 className={styles.heading}>Services</h2>
             <p className={styles.subheading}>What I Offer</p>
 

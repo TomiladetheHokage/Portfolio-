@@ -10,7 +10,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     return (
-        <div className={Styles["about_container"]}>
+        <div className={Styles["about_container"]} id={'about'}>
             <section className={Styles['about_section']}>
                 <h2 className={Styles['title']}>About Me</h2>
                 <span className={Styles['sub-title']}>My intro</span>
