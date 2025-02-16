@@ -32,13 +32,13 @@ export const workData = [
             'Whether you\'re looking for your next opportunity or ' +
             'trying to fill a role, this platform makes the process simple and efficient.',
     },
-    {
-        id: 4,
-        image: work4,
-        title: 'Valar',
-        category: 'web',
-        description: 'A digital product marketplace for creators and designers.',
-    },
+    // {
+    //     id: 4,
+    //     image: work4,
+    //     title: 'Valar',
+    //     category: 'web',
+    //     description: 'A digital product marketplace for creators and designers.',
+    // },
     {
         id: 5,
         image: work5,

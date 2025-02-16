@@ -4,13 +4,13 @@ const Info = () => {
         <>
             <div className={Style['info_container']}>
                 <div className={Style['info']}>
-                    <i className="fa-regular fa-lightbulb"></i>
+                    <i className="fa-regular fa-lightbulb" style={{fontSize: '30px'}}></i>
                     <h2>Experience</h2>
                     <p>2 + years</p>
                 </div>
 
                 <div className={Style['info']}>
-                    <i className="fa-solid fa-briefcase"></i>
+                    <i className="fa-solid fa-briefcase" style={{fontSize: '30px'}}></i>
                     <h2>Completed</h2>
                     <p>5 projects</p>
                 </div>

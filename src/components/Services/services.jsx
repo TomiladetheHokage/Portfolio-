@@ -133,7 +133,7 @@ const Services = () => {
                     1024: { slidesPerView: 3 },
                 }}
                 className={styles.servicesCarousel}
-                ref={swiperRef} // Attach the swiperRef to the Swiper component
+                ref={swiperRef}
             >
                 {services.map((service, index) => (
                     <SwiperSlide key={index}>

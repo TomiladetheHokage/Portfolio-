@@ -56,9 +56,10 @@ body {
 }
 
 .nav__link {
-    font-size: var(--small-font-size);
+    /*font-size: var(--small-font-size);*/
     color: var(--text-color);
     transition: color 0.3s ease-in-out;
+    font-size: 18px;
 }
 .show {
     transform: translateX(0); /* Show the menu */

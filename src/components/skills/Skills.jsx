@@ -6,7 +6,7 @@ const Skills = () => {
 
     return (
         <section className={Styles['skill_section']} id="skills">
-            <h2 className={Styles['section_title']}>Skills</h2>
+            <h2 className={Styles['section_title']} style={{fontSize: '35px'}}>Skills</h2>
             <span className={Styles['section_subtitle']}>My technical level</span>
 
             <div className={Styles['skill_container']}>

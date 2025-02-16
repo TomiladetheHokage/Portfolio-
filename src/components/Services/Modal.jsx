@@ -15,7 +15,7 @@ const Modal = ({ isOpen, onClose, title, description, points }) => {
                 <ul className={styles.list}>
                     {points.map((point, index) => (
                         <li key={index} className={styles.listItem}>
-                            <FaCheckCircle className={Styles['badge_icon']}/>   {point}
+                            <FaCheckCircle className={Styles['badge_icon']}/> {point}
                         </li>
                     ))}
                 </ul>
