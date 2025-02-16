@@ -3,10 +3,10 @@
     justify-content: center;
     align-items: center;
     column-gap: 0.75rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
     flex-wrap: wrap;
     font-size: 1.5rem;
+    width: 90%;
+    margin: auto;
 }
 
 .work__item {
@@ -29,10 +29,14 @@
     margin-top: 3rem;
     margin-bottom: 10rem;
 }
+.section_title{
+    width: 90%;
+    margin: auto;
+}
 
 .work__container {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, max-content);
     gap: 9rem;
     justify-content: center;
 }
