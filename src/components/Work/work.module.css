@@ -42,7 +42,7 @@
 }
 
 .work_card_image {
-    width: 350px;
+    width: 300px;
     height: auto;
     animation: none;
 }
@@ -58,8 +58,9 @@
     border: 1px solid rgba(0,0,0,0.1);
     padding: 1.25rem;
     border-radius: 1rem;
-    margin-bottom: -5rem;
+    margin-bottom: -2rem;
     text-align: center;
+    width: 90%;
 }
 
 .work_title {
