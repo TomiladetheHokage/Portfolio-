@@ -37,7 +37,7 @@
 .work__container {
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 9rem;
+    gap: 5rem;
     justify-content: center;
 }
 
