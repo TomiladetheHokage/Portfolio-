@@ -1,50 +1,47 @@
 import React from "react";
-import Styles from "./style/header.module.css";
 
 const Header = ({ isMenuOpen, toggleMenu }) => {
     return (
-        <header className={Styles.header}>
-            <nav className={Styles.nav_container}>
-                <a href="index.html" className={Styles.nav_logo}>Tomilade.com</a>
+        <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+            <nav className="flex justify-between items-center px-6 py-4 md:px-12">
+                {/* Logo */}
+                <a href="index.html" className="text-2xl font-bold text-black">
+                    Tomilade.com
+                </a>
 
-                <div className={`${Styles.nav__menu} ${isMenuOpen ? Styles.show : ""}`}>
-                    <ul className={Styles.nav__list}>
-                        <li className={Styles.nav__item}>
-                            <a href="#home" className={Styles.nav__link}>
-                                <i className="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li className={Styles.nav__item}>
-                            <a href="#about" className={Styles.nav__link}>
-                                <i className="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-                        <li className={Styles.nav__item}>
-                            <a href="#skills" className={Styles.nav__link}>
-                                <i className="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li className={Styles.nav__item}>
-                            <a href="#services" className={Styles.nav__link}>
-                                <i className="uil uil-briefcase-alt nav__icon"></i> Services
-                            </a>
-                        </li>
-                        <li className={Styles.nav__item}>
-                            <a href="#portfolio" className={Styles.nav__link}>
-                                <i className="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-                        <li className={Styles.nav__item}>
-                            <a href="#contact" className={Styles.nav__link}>
-                                <i className="uil uil-message nav__icon"></i> Contact Me
-                            </a>
-                        </li>
+                {/* Nav Menu (Desktop) */}
+                <div
+                    className={`${
+                        isMenuOpen ? "flex" : "hidden"
+                    } md:flex flex-col md:flex-row items-center gap-6 absolute md:static top-0 right-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none p-6 md:p-0 transition-transform duration-300`}
+                >
+                    <ul className="flex flex-col md:flex-row gap-6 text-lg">
+                        {[
+                            { href: "#home", label: "Home", icon: "uil uil-estate" },
+                            { href: "#about", label: "About", icon: "uil uil-user" },
+                            { href: "#skills", label: "Skills", icon: "uil uil-file-alt" },
+                            { href: "#services", label: "Services", icon: "uil uil-briefcase-alt" },
+                            { href: "#portfolio", label: "Portfolio", icon: "uil uil-scenery" },
+                            { href: "#contact", label: "Contact Me", icon: "uil uil-message" },
+                        ].map((item, index) => (
+                            <li key={index} className="list-none">
+                                <a href={item.href} className="flex items-center text-black hover:text-gray-500 transition">
+                                    <i className={`${item.icon} mr-2 text-xl`}></i> {item.label}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
-                    <i className={`uil uil-times ${Styles.nav__close}`} onClick={toggleMenu}></i>
+
+                    {/* Close Icon (Mobile Only) */}
+                    <i
+                        className="uil uil-times text-2xl cursor-pointer block md:hidden text-black"
+                        onClick={toggleMenu}
+                    ></i>
                 </div>
 
+                {/* Menu Toggle Button (Mobile) */}
                 {!isMenuOpen && (
-                    <div className={Styles.nav__toggle} onClick={toggleMenu}>
+                    <div className="md:hidden text-2xl text-black cursor-pointer" onClick={toggleMenu}>
                         <i className="uil uil-apps"></i>
                     </div>
                 )}
