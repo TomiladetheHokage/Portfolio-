@@ -13,14 +13,17 @@ jobs:
     steps: 
       - name: Checkout code
         uses: actions/setup-node@v4
+
+      - name: List current directory contents  
+        run: ls -la
      
       - name: Install node
         uses: actions/setup-node@v4
         with: 
          node-version: "20"
 
-      - name: List current directory contents  
-        run: ls -la  
+      # - name: List current directory contents  
+      #   run: ls -la  
          
       - name: Change to project directory  
         run: cd /home/runner/work/Portfolio-/portfolio-
