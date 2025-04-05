@@ -1,27 +1,21 @@
-import Style from './About.module.css'
+import React from 'react';
+
 const Info = () => {
-    return(
-        <>
-            <div className={Style['info_container']}>
-                <div className={Style['info']}>
-                    <i className="fa-regular fa-lightbulb" style={{fontSize: '30px'}}></i>
-                    <h2>Experience</h2>
-                    <p>2 + years</p>
-                </div>
-
-                <div className={Style['info']}>
-                    <i className="fa-solid fa-briefcase" style={{fontSize: '30px'}}></i>
-                    <h2>Completed</h2>
-                    <p>5 projects</p>
-                </div>
-
-                {/*<div className={Style['info']}>*/}
-                {/*    <div className="icon">🎧</div>*/}
-                {/*    <h2>Support</h2>*/}
-                {/*    <p>Online 24/7</p>*/}
-                {/*</div>*/}
+    return (
+        <div className="flex flex-col md:flex-row justify-center gap-8">
+            <div className="flex flex-col items-center text-center bg-gray-100 p-5 rounded-lg shadow-md w-48">
+                <i className="fa-regular fa-lightbulb text-3xl text-blue-600"></i>
+                <h2 className="text-lg font-semibold mt-2">Experience</h2>
+                <p className="text-gray-600">2+ years</p>
             </div>
-        </>
-    )
+
+            <div className="flex flex-col items-center text-center bg-gray-100 p-5 rounded-lg shadow-md w-48">
+                <i className="fa-solid fa-briefcase text-3xl text-blue-600"></i>
+                <h2 className="text-lg font-semibold mt-2">Completed</h2>
+                <p className="text-gray-600">5 projects</p>
+            </div>
+        </div>
+    );
 }
-export default Info
+
+export default Info;

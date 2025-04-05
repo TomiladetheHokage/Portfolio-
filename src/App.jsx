@@ -9,6 +9,9 @@ import About from "./components/about/About.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import Services from "./components/Services/services.jsx";
 import Work from "./components/Work/work.jsx";
+import WorkExperience from "./components/experience/workExperience.jsx";
+import GetInTouch from "./components/getIntouch/GetInTouch.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
     return (
@@ -19,6 +22,9 @@ function App() {
             <Skills/>
             <Services/>
             <Work/>
+            <WorkExperience/>
+            <GetInTouch/>
+            <Footer/>
         </>
     );
 }

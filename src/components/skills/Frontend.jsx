@@ -4,7 +4,7 @@ import Styles from "./Skils.module.css";
 
 const Frontend = () => {
     return (
-        <div className={Styles['skills_content']}>
+        <div className="border border-black rounded-2xl px-4 py-4 mt-12 text-left">
             <h3 className={Styles['skills_title']}>Frontend Development</h3>
 
             <div className={Styles['skills_box']}>
@@ -59,6 +59,8 @@ const Frontend = () => {
                     </div>
                 </div>
             </div>
+
+
         </div>
     );
 };
