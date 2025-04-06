@@ -32,7 +32,7 @@ const Home = () => {
                 <div className="lg:max-w-[500px]">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl mb-5 md:mb-12"
                         style={{fontFamily: 'Poppins, sans-serif'}}>
-                        OluwaTomilade Yemi-Oyebola
+                        Oluwatomilade Yemi-Oyebola
                     </h1>
 
                     <h3 className="text-xl md:text-2xl lg:text-3xl mb-4 md:mb-8">
