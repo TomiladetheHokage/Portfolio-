@@ -10,7 +10,7 @@ const WorkExperience = () => {
                                 <i className="fa-solid fa-rocket text-2xl md:text-3xl"></i>
                                 <div>
                                     <h3 className="text-xl font-bold">Front-End intern</h3>
-                                    <p className="text-gray-600">Smarthivetechsolution • 2025 - Present</p>
+                                    <p className="text-gray-600">Smarthivetechsolution • Feb ~ 2025 - May ~ 2025</p>
                                     <ul className="mt-4 space-y-2 text-gray-600">
                                         <li>• Collaborated with designers and backend engineers to refine features and
                                             enhance user experience.
@@ -33,7 +33,7 @@ const WorkExperience = () => {
                                 <i className="fa-solid fa-laptop-code text-2xl md:text-3xl"></i>
                                 <div>
                                     <h3 className="text-xl font-bold">Software Engineer (Trainee) </h3>
-                                    <p className="text-gray-600">Semicolon Africa • 2024 - 2025</p>
+                                    <p className="text-gray-600">Semicolon Africa • Feb ~ 2024 - Feb ~ 2025</p>
                                     <ul className="mt-4 space-y-2 text-gray-600">
                                         <li>• Developed and deployed real-world applications, applying software
                                             engineering best practices.
@@ -65,7 +65,7 @@ const WorkExperience = () => {
                                 <i className="fa-solid fa-headset text-2xl md:text-3xl"></i>
                                 <div>
                                     <h3 className="text-xl font-bold">IT support</h3>
-                                    <p className="text-gray-600">Tulcan Energy resources limited • 2022 - 2022</p>
+                                    <p className="text-gray-600">Tulcan Energy resources limited • May ~ 2022 - Oct ~ 2022</p>
                                     <ul className="mt-4 space-y-2 text-gray-600">
                                         <li>• Provided technical support to staff, resolving hardware and software
                                             issues,
