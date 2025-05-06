@@ -1,7 +1,7 @@
 import React from 'react';
 import picture from '../../assets/fynshit.jpg';
 import Info from "./Info.jsx";
-import cv from "../../assets/Tomilade CV.pdf";
+import cv from "../../assets/Tomilade-CV (1).pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import crown from '../../assets/crown.png';
