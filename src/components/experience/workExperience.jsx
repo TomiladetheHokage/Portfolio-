@@ -1,93 +1,90 @@
+import React, { useState } from 'react';
+
+const experiences = [
+  {
+    icon: 'fa-laptop-code',
+    title: 'Software Developer',
+    company: 'VAS2Nets Africa',
+    date: 'Apr ~ 2025 - present',
+    bullets: [
+      'Built a Healthcare Management System that allows patients to book appointments and connects doctors, nurses, and patients smoothly.',
+      'Developed the full mobile Banking App using React Native and supported backend integration with third-party services.',
+      'Worked mainly with PHP and React Native to deliver simple, effective solutions that improve user experience',
+    ],
+  },
+  {
+    icon: 'fa-rocket',
+    title: 'Front-End intern',
+    company: 'Smarthivetechsolution',
+    date: 'Feb ~ 2025 - May ~ 2025',
+    bullets: [
+      'Helped build and improve the company website by turning designs into a responsive, user-friendly interface using Next.js.',
+      'Worked closely with designers and backend engineers to ensure features worked well and enhanced user experience.',
+    ],
+  },
+  {
+    icon: 'fa-laptop-code',
+    title: 'Software Engineer (Trainee)',
+    company: 'Semicolon Africa',
+    date: 'Feb ~ 2024 - Feb ~ 2025',
+    bullets: [
+      'Completed intensive training in full-stack software development, working with technologies like Java, Spring Boot, React, React Native, PHP, and SQL.',
+      'Built real-world projects including blog applications, gas leakage detection systems, and mobile apps, applying best coding and testing practices.',
+      'Gained hands-on experience with DevOps basics, Docker, CI/CD pipelines, and collaborative workflows using Git.',
+      'Completed an entrepreneurship course focused on business management, learning about business models, scaling, and creating sustainable value alongside technical skills.',
+    ],
+  },
+  {
+    icon: 'fa-headset',
+    title: 'IT support',
+    company: 'Tulcan Energy resources limited',
+    date: 'May ~ 2022 - Oct ~ 2022',
+    bullets: [
+      'Provided technical support to staff, resolving hardware and software issues, ensuring seamless workflow.',
+      'Created a troubleshooting document for common IT issues, reducing repeated support requests.',
+      'Installed and configured essential software applications, improving system functionality.',
+      'Performed weekly printer and system checks, preventing downtime and ensuring operational efficiency.',
+    ],
+  },
+];
+
 const WorkExperience = () => {
-    return(
-        <>
-            <section id="experience" className="py-20 bg-white mt-[-20px] md:mt-0">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
-                    <div className="space-y-8">
-                        <div className="bg-gray-50 rounded-xl p-6">
-                            <div className="flex items-start gap-4">
-                                <i className="fa-solid fa-rocket text-2xl md:text-3xl"></i>
-                                <div>
-                                    <h3 className="text-xl font-bold">Front-End intern</h3>
-                                    <p className="text-gray-600">Smarthivetechsolution • Feb ~ 2025 - May ~ 2025</p>
-                                    <ul className="mt-4 space-y-2 text-gray-600">
-                                        <li>• Collaborated with designers and backend engineers to refine features and
-                                            enhance user experience.
-                                        </li>
-                                        <li>• Implemented website updates that enhanced functionality, leading to a more
-                                            modern and efficient user experience.
-                                        </li>
-                                        <li>• Used Jira to track tasks and collaborate with designers and developers,
-                                            keeping projects on schedule while working remotely.
-                                        </li>
-                                        <li>•  Redesigned the Smart Hive SMS website using Next.js, transforming static
-                                            designs into a fully responsive and interactive interface.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-gray-50 rounded-xl p-6">
-                        <div className="flex items-start gap-4">
-                                <i className="fa-solid fa-laptop-code text-2xl md:text-3xl"></i>
-                                <div>
-                                    <h3 className="text-xl font-bold">Software Engineer (Trainee) </h3>
-                                    <p className="text-gray-600">Semicolon Africa • Feb ~ 2024 - Feb ~ 2025</p>
-                                    <ul className="mt-4 space-y-2 text-gray-600">
-                                        <li>• Developed and deployed real-world applications, applying software
-                                            engineering best practices.
-                                        </li>
-                                        <li>• Built full-stack projects using Java, Spring Boot, React, SQL, and
-                                            MongoDB,
-                                            ensuring scalable and maintainable solutions.
-                                        </li>
-                                        <li>• Collaborated with a team to design and implement applications, following
-                                            agile
-                                            methodologies and best practices.
-                                        </li>
-                                        <li>• Containerized multiple applications using Docker, improving consistency
-                                            and
-                                            simplifying deployment.
-                                        </li>
-                                        <li>• Implemented CI/CD pipelines with GitHub Actions, automating builds and
-                                            tests for efficient software delivery.
-                                        </li>
-                                        <li>• Deployed applications to AWS, ensuring scalability and reliability in a cloud
-                                            environment.
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
-                        </div>
-                        <div className="bg-gray-50 rounded-xl p-6">
-                            <div className="flex items-start gap-4">
-                                <i className="fa-solid fa-headset text-2xl md:text-3xl"></i>
-                                <div>
-                                    <h3 className="text-xl font-bold">IT support</h3>
-                                    <p className="text-gray-600">Tulcan Energy resources limited • May ~ 2022 - Oct ~ 2022</p>
-                                    <ul className="mt-4 space-y-2 text-gray-600">
-                                        <li>• Provided technical support to staff, resolving hardware and software
-                                            issues,
-                                            ensuring seamless workflow.
-                                        </li>
-                                        <li>• Created a troubleshooting document for common IT issues, reducing repeated
-                                            support requests.
-                                        </li>
-                                        <li>• Installed and configured essential software applications, improving system
-                                            functionality.
-                                        </li>
-                                        <li>•  Performed weekly printer and system checks, preventing downtime and
-                                            ensuring operational efficiency.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  const [showAll, setShowAll] = useState(false);
+  const displayedExperiences = showAll ? experiences : experiences.slice(0, 2);
+
+  return (
+    <section id="experience" className="py-20 bg-white mt-[-20px] md:mt-0">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
+        <div className="space-y-8">
+          {displayedExperiences.map((exp, idx) => (
+            <div key={idx} className="bg-gray-50 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <i className={`fa-solid ${exp.icon} text-2xl md:text-3xl`}></i>
+                <div>
+                  <h3 className="text-xl font-bold">{exp.title}</h3>
+                  <p className="text-gray-600">{exp.company} • {exp.date}</p>
+                  <ul className="mt-4 space-y-2 text-gray-600">
+                    {exp.bullets.map((bullet, i) => (
+                      <li key={i}>• {bullet}</li>
+                    ))}
+                  </ul>
                 </div>
-            </section>
-        </>
-    )
-}
-export default WorkExperience
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-900 hover:text-white shadow-md"
+          >
+            {showAll ? 'View Less' : 'View More'}
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WorkExperience;

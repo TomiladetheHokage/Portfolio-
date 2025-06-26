@@ -1,24 +1,23 @@
 import React from 'react';
-import picture from '../../assets/fynshit.jpg';
-import Info from "./Info.jsx";
+
 import cv from "../../assets/Tomilade-CV (1).pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import crown from '../../assets/crown.png';
-import checkBoard from '../../assets/clipboard-tick.png';
+
 import aboutPicture from "../../assets/Cartoon Tomi.png"
-import aboutPicture2 from "../../assets/Aldibi .png"
-import pfp from "../../assets/ChatGPT Image Mar 28, 2025, 10_59_32 AM.png"
+import instagram from "../../assets/instagram.png"
+import linkedIn from "../../assets/Vector.png"
+import gitHub from "../../assets/Vector (1).png"
 
 const About = () => {
     return (
         <>
             <section id="about" className="py-20">
                 <div className="max-w-6xl mx-auto px-4">
-                    <div className="bg-white overflow-hidden">
-                        <div className="font-semibold text-black justify-center text-center md:mb-12 md:text-4xl text-3xl">About
-                            Me
-                        </div>
+                    <div className="bg-white overflow-hidden md:mt-20">
+                        {/*<div className="font-semibold text-black justify-center text-center md:mb-12 md:text-4xl text-3xl">About*/}
+                        {/*    Me*/}
+                        {/*</div>*/}
                         <div className="md:flex gap-x-12">
                             <div className="md:w-1/3 w-40 h-40 md:w-80 md:h-80 mx-auto mb-28 mt-8 md:mt-0 md:mb-0  md:scale-100">
                                 <img
@@ -28,47 +27,50 @@ const About = () => {
                                 />
                             </div>
                             <div className="md:w-2/3 p-8">
-                                <h2 className="mt-2 text-3xl font-bold text-gray-900 md:mb-4">Passionate About Building Great
-                                    Software</h2>
+                                <h2 className="mt-2 text-3xl font-bold text-gray-900 md:mb-4">Passionate About Building Great Software</h2>
                                 <p className="text-lg text-gray-700 leading-relaxed">
-                                    A passionate Software Engineer with experience in building full-stack applications.
-                                    I love solving problems, writing clean code, and creating seamless user experiences.
+                                    I’m Yemi-Oyebola Tomilade.
+                                    I’ve always had a strong desire to build and make things.
+                                    That passion led me to learn software engineering.
                                 </p>
 
                                 <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                                    I specialize in React, Java, Spring Boot, JavaScript, Nest Js, Pyhton  and DevOps practices like
-                                    Docker and CI/CD. My goal is to build scalable and high-performance applications
-                                    that make a difference.
+                                    Today, I’m skilled in full-stack development and DevOps, building web, mobile, and
+                                    embedded systems.
+                                    But beyond just coding, I see myself as an entrepreneur—focused on solving problems
+                                    and creating real value.
                                 </p>
-                                <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    <div className="flex items-center gap-2">
-                                        <i className="fa-solid fa-clipboard-check text-3xl"></i>
-                                        <span className="text-gray-700">Completed 5 projects</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <i className="fa-solid fa-book-open-reader text-3xl"></i>
-                                        <span className="text-gray-700">CS Degree, CU</span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <i className="fa-solid fa-briefcase text-3xl"></i>
-                                        <span className="text-gray-700">2+ Years Experience</span>
-                                    </div>
-                                    {/* Download CV Button */}
-                                    <a
-                                        download
-                                        href={cv}
-                                        className="mt-10 md:mt-20 bg-blue-500 text-white px-4 py-3 rounded-lg shadow-lg text-lg sm:text-xl
-                hover:bg-[#0090FF] transition-transform duration-300 transform hover:scale-105 flex items-center gap-2 w-50 md:w-full"
-                                    >
-                                        Download CV <FontAwesomeIcon icon={faDownload}/>
-                                    </a>
+
+                                <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+                                    My vision is to use technology and innovation to help save Nigeria — creating jobs,
+                                    solving problems, and making a lasting impact on my community.
+                                </p>
+
+
+                                <div
+                                    className="md:mt-12 mx-auto md:ml-0 mx-auto mt-6 flex space-x-6 justify-center lg:justify-start h-13 w-13 md:h-[56px] md:w-[56px] lg:h-[56px] lg:w-[56px]">
+                                    <img src={instagram} alt="Instagram"
+                                         className="transform transition-transform duration-300 hover:scale-110 bg-[#ffff0]"/>
+                                    <img src={linkedIn} alt="LinkedIn"
+                                         className="transform transition-transform duration-300 hover:scale-110"/>
+                                    <img src={gitHub} alt="GitHub"
+                                         className="transform transition-transform duration-300 hover:scale-110"/>
                                 </div>
+                                {/* Download CV Button */}
+                                <a
+                                    download
+                                    href={cv}
+                                    className="mt-10 md:mt-20 bg-blue-500 text-white px-4 py-3 rounded-lg shadow-lg text-lg sm:text-xl
+    hover:bg-[#0090FF] transition-transform duration-300 transform hover:scale-105 inline-flex items-center gap-2"
+                                >
+                                    Download CV <FontAwesomeIcon icon={faDownload}/>
+                                </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
 
 
             {/*<div className="flex flex-col items-center text-center px-6 py-12 md:mt-42">*/}

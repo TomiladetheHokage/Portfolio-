@@ -22,71 +22,120 @@ const Header = () => {
                     Tomilade.com
                 </a>
 
-                {/* Nav Menu (Desktop) */}
+
                 <div
-                    className={`${
-                        isMenuOpen ? "flex" : "hidden"
-                    } md:flex flex-col md:flex-row md:items-center gap-6 absolute md:static top-0 right-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none p-6 md:p-0 transition-transform duration-300`}
+                  className={`fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white shadow-2xl rounded-l-2xl z-50 transform transition-transform duration-300 p-6 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 >
-                    <ul className="flex flex-col md:flex-row gap-6 text-lg text-left">
-                        <li className="list-none">
-                            <a href="#home" className="flex items-center text-black hover:text-gray-500 transition">
-                                <div className="h-[23px] w-[23px] animate-none">
-                                    <img src={home} alt="home" className="h-full w-full object-contain "/>
-                                </div>
-                                <p className="pl-4">Home</p>
-                            </a>
-                        </li>
-                        <li className="list-none">
-                            <a href="#about" className="flex items-center text-black hover:text-gray-500 transition">
-                                <div className="h-[23px] w-[23px] animate-none">
-                                    <img src={about} alt="home" className="h-full w-full object-contain "/>
-                                </div>
-                                <p className="pl-4">About</p>
-                            </a>
-                        </li>
-                        <li className="list-none">
-                            <a href="#portfolio"
-                               className="flex items-center text-black hover:text-gray-500 transition">
-                                <div className="h-[23px] w-[23px] animate-none">
-                                    <img src={portfolio} alt="home" className="h-full w-full object-contain "/>
-                                </div>
-                                <p className="pl-4">Portfolio</p>
-                            </a>
-                        </li>
-
-                        <li className="list-none">
-                            <a href="#Services"
-                               className="flex items-center text-black hover:text-gray-500 transition">
-                                <div className="h-[23px] w-[23px] animate-none">
-                                    <img src={services} alt="home" className="h-full w-full object-contain "/>
-                                </div>
-                                <p className="pl-4">Services</p>
-                            </a>
-                        </li>
-
-                        <li className="list-none">
-                            <a href="#contact-me"
-                               className="flex items-center text-black hover:text-gray-500 transition">
-                                <div className="h-[23px] w-[23px] animate-none">
-                                    <img src={contact} alt="home"
-                                         className="h-full w-full object-contain animate-none "/>
-                                </div>
-                                <p className="pl-4">Contact me</p>
-                            </a>
-                        </li>
-                    </ul>
-
-
-                    {isMenuOpen && (
-                        <i
-                            className="fa-solid fa-xmark absolute top-[24px] right-4 text-2xl block md:hidden"
-                            onClick={toggleMenu}
-                        ></i>
-                    )}
-
-
+                  {/* Sidebar Header/Logo */}
+                  <div className="flex items-center justify-between mb-10">
+                    <span className="text-2xl font-bold text-black">Tomilade.com</span>
+                    <i
+                      className="fa-solid fa-xmark text-2xl cursor-pointer"
+                      onClick={toggleMenu}
+                    ></i>
+                  </div>
+                  <ul className="flex flex-col gap-6 text-lg text-left mt-4">
+                    {/*<li className="list-none">*/}
+                    {/*  <a href="#about" className="flex items-center text-black hover:text-gray-500 transition">*/}
+                    {/*    <div className="h-[23px] w-[23px] animate-none">*/}
+                    {/*      <img src={home} alt="home" className="h-full w-full object-contain "/>*/}
+                    {/*    </div>*/}
+                    {/*    <p className="pl-4">Home</p>*/}
+                    {/*  </a>*/}
+                    {/*</li>*/}
+                    <li className="list-none">
+                      <a href="#about" className="flex items-center text-black hover:text-gray-500 transition">
+                        <div className="h-[23px] w-[23px] animate-none">
+                          <img src={about} alt="about" className="h-full w-full object-contain "/>
+                        </div>
+                        <p className="pl-4">About</p>
+                      </a>
+                    </li>
+                    <li className="list-none">
+                      <a href="#projects" className="flex items-center text-black hover:text-gray-500 transition">
+                        <div className="h-[23px] w-[23px] animate-none">
+                          <img src={portfolio} alt="portfolio" className="h-full w-full object-contain "/>
+                        </div>
+                        <p className="pl-4">Portfolio1</p>
+                      </a>
+                    </li>
+                    <li className="list-none">
+                      <a href="#experience" className="flex items-center text-black hover:text-gray-500 transition">
+                        <div className="h-[23px] w-[23px] animate-none">
+                          <i className="fa-solid fa-briefcase text-xl"></i>
+                        </div>
+                        <p className="pl-4">Work Experience</p>
+                      </a>
+                    </li>
+                    <li className="list-none">
+                      <a href="#services" className="flex items-center text-black hover:text-gray-500 transition">
+                        <div className="h-[23px] w-[23px] animate-none">
+                          <img src={services} alt="services" className="h-full w-full object-contain "/>
+                        </div>
+                        <p className="pl-4">Services</p>
+                      </a>
+                    </li>
+                    <li className="list-none">
+                      <a href="#contact" className="flex items-center text-black hover:text-gray-500 transition">
+                        <div className="h-[23px] w-[23px] animate-none">
+                          <img src={contact} alt="contact" className="h-full w-full object-contain animate-none "/>
+                        </div>
+                        <p className="pl-4">Contact me</p>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+                {/* Desktop Navbar */}
+                <ul className="hidden md:flex flex-row items-center gap-6 text-lg text-left mt-0">
+                  {/*<li className="list-none">*/}
+                  {/*  <a href="#about" className="flex items-center text-black hover:text-gray-500 transition">*/}
+                  {/*    <div className="h-[23px] w-[23px] animate-none">*/}
+                  {/*      <img src={home} alt="home" className="h-full w-full object-contain "/>*/}
+                  {/*    </div>*/}
+                  {/*    <p className="pl-4">Home</p>*/}
+                  {/*  </a>*/}
+                  {/*</li>*/}
+                  <li className="list-none">
+                    <a href="#about" className="flex items-center text-black hover:text-gray-500 transition">
+                      <div className="h-[23px] w-[23px] animate-none">
+                        <img src={about} alt="about" className="h-full w-full object-contain "/>
+                      </div>
+                      <p className="pl-4">About</p>
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a href="#projects" className="flex items-center text-black hover:text-gray-500 transition">
+                      <div className="h-[23px] w-[23px] animate-none">
+                        <img src={portfolio} alt="portfolio" className="h-full w-full object-contain "/>
+                      </div>
+                      <p className="pl-4">Portfolio</p>
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a href="#experience" className="flex items-center text-black hover:text-gray-500 transition">
+                      <div className="h-[23px] w-[23px] animate-none">
+                        <i className="fa-solid fa-briefcase text-xl"></i>
+                      </div>
+                      <p className="pl-4">Work Experience</p>
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a href="#services" className="flex items-center text-black hover:text-gray-500 transition">
+                      <div className="h-[23px] w-[23px] animate-none">
+                        <img src={services} alt="services" className="h-full w-full object-contain "/>
+                      </div>
+                      <p className="pl-4">Services</p>
+                    </a>
+                  </li>
+                  <li className="list-none">
+                    <a href="#contact" className="flex items-center text-black hover:text-gray-500 transition">
+                      <div className="h-[23px] w-[23px] animate-none">
+                        <img src={contact} alt="contact" className="h-full w-full object-contain animate-none "/>
+                      </div>
+                      <p className="pl-4">Contact me</p>
+                    </a>
+                  </li>
+                </ul>
 
                 {/* Menu Toggle Button (Mobile) */}
                 {!isMenuOpen && (

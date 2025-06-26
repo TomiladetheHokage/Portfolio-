@@ -109,31 +109,30 @@ const Work = () => {
                         </button>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
                     {displayedProjects.map((project) => {
                         const imageClass = project.type === 'app'
-                            ? 'max-h-48 max-w-md mx-auto object-contain transition-transform duration-300 hover:scale-105 shadow-2xl'
+                            ? 'w-full max-h-72 object-contain transition-transform duration-300 hover:scale-105 shadow-2xl'
                             : 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105 shadow-2xl';
                         return (
-                            <div key={project.id} className="bg-white rounded-xl shadow-md border border-gray-100 flex flex-col h-full transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+                            <div key={project.id} className="bg-white rounded-xl shadow-md border 
+                            border-gray-100 flex flex-col  transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                                 {project.type === 'app' ? (
-                                    <div className="flex justify-center items-center bg-gray-100 p-4 rounded-lg">
-                                        <img
-                                            src={project.image}
-                                            alt={project.title}
-                                            className={imageClass}
-                                        />
-                                    </div>
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="mx-auto max-w-full"
+                                    />
                                 ) : (
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className={imageClass}
+                                        className="w-full h-48 object-cover mx-auto block"
                                     />
                                 )}
-                                <div className="p-6 flex flex-col flex-1">
+                                <div className="p-8 flex flex-col">
                                     <h3 className="text-xl font-bold mb-2 text-black">{project.title}</h3>
-                                    <p className="text-gray-600 mb-4 flex-1">{project.description}</p>
+                                    <p className="text-gray-600 mb-4">{project.description}</p>
                                     <div className="flex flex-wrap gap-2 mb-4">
                                         {project.techStack.map((tech, index) => (
                                             <span key={index} className="px-3 py-1 bg-gray-200 text-black rounded-full text-sm">{tech}</span>
@@ -143,7 +142,8 @@ const Work = () => {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center px-4 py-2 border border-black text-black rounded-lg bg-white hover:bg-gray-100 transition-colors group mt-auto"
+                                        className="inline-flex items-center px-4 py-2 border border-black text-black
+                                        rounded-lg bg-white hover:bg-gray-100 transition-colors group mt-auto"
                                     >
                                         View Project
                                         <i className="pl-2 fa-solid fa-square-arrow-up-right group-hover:translate-x-1 transition-transform"></i>
