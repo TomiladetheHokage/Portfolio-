@@ -66,7 +66,7 @@ const Work = () => {
             techStack: ['React Native', 'PHP'],
             image: work7,
             type: 'app',
-            link: '#',
+            link: 'https://expo.dev/accounts/tomiladethegreatest/projects/vas-trust/builds/0d6a2030-fdfa-46a7-b3ca-4f7e612777d3',
         },
         {
             id: 8,
@@ -89,12 +89,12 @@ const Work = () => {
                 <p className="text-center text-gray-500 mb-12">A selection of my recent work in web and app development.</p>
                 <div className="flex justify-center gap-0 mb-8">
                     <div className="inline-flex rounded-full shadow-sm border border-black overflow-hidden">
-                        <button
-                            className={`px-4 py-2 font-semibold transition-colors focus:outline-none ${filter === 'all' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
-                            onClick={() => setFilter('all')}
-                        >
-                            All
-                        </button>
+                        {/*<button*/}
+                        {/*    className={`px-4 py-2 font-semibold transition-colors focus:outline-none ${filter === 'all' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}*/}
+                        {/*    onClick={() => setFilter('all')}*/}
+                        {/*>*/}
+                        {/*    All*/}
+                        {/*</button>*/}
                         <button
                             className={`px-4 py-2 font-semibold transition-colors focus:outline-none ${filter === 'web' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
                             onClick={() => setFilter('web')}
