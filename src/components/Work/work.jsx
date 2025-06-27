@@ -15,33 +15,15 @@ const Work = () => {
     const projects = [
         {
             id: 1,
-            title: 'Sakura Sells',
-            description: 'Sakura Sells is an online marketplace for art lovers and creators...',
-            techStack: ['React', 'Spring Boot', 'SQL'],
-            image: work1,
+            title: 'Vas Care',
+            description: 'Vas care is a hospital management system',
+            techStack: ['PHP', 'Html', 'Tailwind CSS'],
+            image: work8,
             type: 'web',
-            link: '#',
+            link: 'https://vas-care.onrender.com/',
         },
         {
             id: 2,
-            title: 'Seyi F.A.B',
-            description: 'Seyi FAB is a Nigerian clothing store that brings style...',
-            techStack: ['React'],
-            image: work2,
-            type: 'web',
-            link: 'https://seyifab.vercel.app/',
-        },
-        {
-            id: 3,
-            title: 'Work Next',
-            description: 'Work Next helps job seekers and employers connect seamlessly...',
-            techStack: ['React', 'Spring Boot', 'Mongo DB'],
-            image: work3,
-            type: 'web',
-            link: 'https://worknext-eight.vercel.app/',
-        },
-        {
-            id: 4,
             title: 'SmarthiveSms',
             description: 'SmarthiveSms is a service that helps with SMS-based communication...',
             techStack: ['Next JS', 'Tailwind CSS'],
@@ -50,7 +32,35 @@ const Work = () => {
             link: 'https://smart-hive-landing-page-vercel.vercel.app/',
         },
         {
+            id: 3,
+            title: 'Sakura Sells',
+            description: 'Sakura Sells is an online marketplace for art lovers and creators to buy and sell artworks',
+            techStack: ['React', 'Spring Boot', 'SQL'],
+            image: work1,
+            type: 'web',
+            link: '#',
+        },
+
+        {
+            id: 4,
+            title: 'Seyi F.A.B',
+            description: 'Seyi FAB is a Nigerian clothing store',
+            techStack: ['React'],
+            image: work2,
+            type: 'web',
+            link: 'https://seyifab.vercel.app/',
+        },
+        {
             id: 5,
+            title: 'Work Next',
+            description: 'Work Next helps job seekers and employers connect seamlessly...',
+            techStack: ['React', 'Spring Boot', 'Mongo DB'],
+            image: work3,
+            type: 'web',
+            link: 'https://worknext-eight.vercel.app/',
+        },
+        {
+            id: 6,
             title: 'Leak Sense',
             description: 'Leak Sense is a gas leakage detection app with real-time alerts...',
             techStack: ['React Native', 'Spring Boot', 'C#'],
@@ -68,15 +78,7 @@ const Work = () => {
             type: 'app',
             link: 'https://expo.dev/accounts/tomiladethegreatest/projects/vas-trust/builds/0d6a2030-fdfa-46a7-b3ca-4f7e612777d3',
         },
-        {
-            id: 8,
-            title: 'Vas Care',
-            description: 'Vas care is a hospital management system',
-            techStack: ['PHP', 'Html', 'Tailwind CSS'],
-            image: work8,
-            type: 'web',
-            link: 'https://vas-care.onrender.com/',
-        },
+
     ];
 
     const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.type === filter);
