@@ -44,8 +44,7 @@ const Services = () => {
                     <p className="text-gray-700">
                         I build modern, scalable web applications using technologies like React, Spring Boot, and
                         NestJS.
-                        From frontend UI design to backend logic and database integration, I deliver complete web
-                        solutions tailored to your business needs.
+                        From frontend UI design to backend logic and database integration.
                     </p>
                 </div>
 
@@ -66,7 +65,7 @@ const Services = () => {
                     <h3 className="text-xl font-semibold mb-4">Mobile App Development</h3>
                     <p className="text-gray-700">
                         I create cross-platform mobile apps using React Native.
-                        Whether it’s an MVP or a production-ready app, I help bring your mobile ideas to life with
+                        Whether it’s an MVP or a production-ready app, I bring mobile ideas to life with
                         smooth performance and clean UI.
                     </p>
                 </div>
@@ -78,7 +77,7 @@ const Services = () => {
                     <p className="text-gray-700">
                         I containerize applications using Docker and set up CI/CD pipelines for automated testing and
                         deployment.
-                        I deploy projects to platforms like Vercel, Render, or DigitalOcean, ensuring smooth release
+                        I deploy projects to platforms like Vercel, Render, or AWS, ensuring smooth release
                         cycles.
                     </p>
                 </div>

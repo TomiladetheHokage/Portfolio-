@@ -16,7 +16,7 @@ const Work = () => {
         {
             id: 1,
             title: 'Vas Care',
-            description: 'Vas care is a hospital management system',
+            description: 'A hospital management system that streamlines healthcare workflows, enabling patients to book appointments, nurses to assign doctors, and receptionists to manage and close consultations.',
             techStack: ['PHP', 'Html', 'Tailwind CSS'],
             image: work8,
             type: 'web',
@@ -25,7 +25,7 @@ const Work = () => {
         {
             id: 2,
             title: 'SmarthiveSms',
-            description: 'SmarthiveSms is a service that helps with SMS-based communication...',
+            description: 'SmarthiveSms is a service that helps with SMS-based communication',
             techStack: ['Next JS', 'Tailwind CSS'],
             image: work6,
             type: 'web',
@@ -44,7 +44,7 @@ const Work = () => {
         {
             id: 4,
             title: 'Seyi F.A.B',
-            description: 'Seyi FAB is a Nigerian clothing store',
+            description: 'A clean, responsive portfolio website for a fashion and beauty brand, showcasing collections and booking features.',
             techStack: ['React'],
             image: work2,
             type: 'web',
@@ -53,7 +53,7 @@ const Work = () => {
         {
             id: 5,
             title: 'Work Next',
-            description: 'Work Next helps job seekers and employers connect seamlessly...',
+            description: 'A job-matching platform that connects job seekers with potential employers, making it easier to discover opportunities and manage applications.',
             techStack: ['React', 'Spring Boot', 'Mongo DB'],
             image: work3,
             type: 'web',
@@ -62,7 +62,7 @@ const Work = () => {
         {
             id: 6,
             title: 'Leak Sense',
-            description: 'Leak Sense is a gas leakage detection app with real-time alerts...',
+            description: 'A smart IoT-based gas leakage detection system that monitors gas levels and alerts users via email and mobile notifications. Built with ESP8266, gas sensors,',
             techStack: ['React Native', 'Spring Boot', 'C#'],
             image: work5,
             type: 'app',

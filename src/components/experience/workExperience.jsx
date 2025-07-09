@@ -7,9 +7,12 @@ const experiences = [
     company: 'VAS2Nets Africa',
     date: 'Apr ~ 2025 - present',
     bullets: [
-      'Built a Healthcare Management System that allows patients to book appointments and connects doctors, nurses, and patients smoothly.',
-      'Developed the full mobile Banking App using React Native and supported backend integration with third-party services.',
-      'Worked mainly with PHP and React Native to deliver simple, effective solutions that improve user experience',
+      'Engineered a Healthcare Management System prototype that streamlined appointment\n' +
+      ' booking and improved care team coordination.',
+      'Designed backend APIs with a focus on scalability and maintainability, and performed code\n' +
+      ' reviews to enforce quality standards.',
+      ' Developed a mobile banking app demo in React Native with backend integration, applying\n' +
+      ' mobile-first design and third-party APIs.',
     ],
   },
   {
@@ -18,8 +21,10 @@ const experiences = [
     company: 'Smarthivetechsolution',
     date: 'Feb ~ 2025 - May ~ 2025',
     bullets: [
-      'Helped build and improve the company website by turning designs into a responsive, user-friendly interface using Next.js.',
-      'Worked closely with designers and backend engineers to ensure features worked well and enhanced user experience.',
+      ' Led the redesign of the company’s website into a responsive, modern interface using\n' +
+      ' Next.js, improving page load times by ~30%',
+      ' Worked closely with designers and backend engineers to deliver a seamless, accessible\n' +
+      ' user experience.',
     ],
   },
   {
@@ -28,10 +33,10 @@ const experiences = [
     company: 'Semicolon Africa',
     date: 'Feb ~ 2024 - Feb ~ 2025',
     bullets: [
-      'Completed intensive training in full-stack software development, working with technologies like Java, Spring Boot, React, React Native, PHP, and SQL.',
-      'Built real-world projects including blog applications, gas leakage detection systems, and mobile apps, applying best coding and testing practices.',
-      'Gained hands-on experience with DevOps basics, Docker, CI/CD pipelines, and collaborative workflows using Git.',
-      'Completed an entrepreneurship course focused on business management, learning about business models, scaling, and creating sustainable value alongside technical skills.',
+      ' Delivered multiple full-stack projects using technologies including Java, Spring Boot, React,\n' +
+      ' React Native, PHP, and SQL.',
+      'Gained hands-on experience in CI/CD pipelines, containerization with Docker, and DevOps\n' +
+      ' practices.',
     ],
   },
   {

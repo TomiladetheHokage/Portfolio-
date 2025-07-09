@@ -27,7 +27,9 @@ const About = () => {
                                 />
                             </div>
                             <div className="md:w-2/3 p-8">
-                                <h2 className="mt-2 text-3xl font-bold text-gray-900 md:mb-4">Passionate About Building Great Software</h2>
+                                <h2 className="mt-2 text-3xl font-bold text-gray-900 md:mb-4">
+                                    Passionate About Building Great Software
+                                </h2>
                                 <p className="text-lg text-gray-700 leading-relaxed">
                                     I’m Yemi-Oyebola Tomilade.
                                     I’ve always had a strong desire to build and make things.
