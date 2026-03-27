@@ -1,6 +1,6 @@
 import React from 'react';
 
-import cv from "../../assets/Oyebola CV2 (2).pdf";
+import cv from "../../assets/Tomilade-oyebola-cv.pdf";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
