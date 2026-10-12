@@ -1,1 +1,1 @@
-hayrok-verification=912c89711526b6f41d99cb42c9908665aa8e75d68a1c6b0c550289aae527baee
+hayrok-verification=bdf77025fc52db229a587f1a0929ffdca42c6c952baef45ed007a670e0faecfe
